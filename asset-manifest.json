@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Conway-s-Game-of-Life/static/css/main.6685e97f.css",
+    "main.js": "/Conway-s-Game-of-Life/static/js/main.01c3fe0b.js",
+    "index.html": "/Conway-s-Game-of-Life/index.html",
+    "main.6685e97f.css.map": "/Conway-s-Game-of-Life/static/css/main.6685e97f.css.map",
+    "main.01c3fe0b.js.map": "/Conway-s-Game-of-Life/static/js/main.01c3fe0b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6685e97f.css",
+    "static/js/main.01c3fe0b.js"
+  ]
+}
