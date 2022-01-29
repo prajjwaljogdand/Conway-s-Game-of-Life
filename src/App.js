@@ -87,7 +87,9 @@ function App() {
           const rows = [];
 
           for (let i = 0; i < numRows; i++) {
-            rows.push(Array.from(Array(numCols), () => Math.random() > 0.85 ? 1 : 0));
+            rows.push(
+              Array.from(Array(numCols), () => (Math.random() > 0.85 ? 1 : 0))
+            );
           }
 
           setGrid(rows);
@@ -104,7 +106,6 @@ function App() {
         {grid.map((rows, i) =>
           rows.map((col, k) => (
             <div
-              
               key={`${i}-${k}`}
               onClick={() => {
                 const newGrid = produce(grid, (gridCopy) => {
@@ -116,10 +117,11 @@ function App() {
                 width: 20,
                 height: 20,
                 backgroundColor: grid[i][k] ? "white" : undefined,
-                boxShadow: grid[i][k] ? "0 0 1px #fff, 0 0 2px #fff, 0 0 4px #fff, 0 0 5px #ff1177,0 0 8px #ff1177, 0 0 10px #ff1177, 0 0 15px #ff1177, 0 0 30px #ff1177" : undefined,
-                zIndex : 1,
+                boxShadow: grid[i][k]
+                  ? "0 0 1px #fff, 0 0 2px #fff, 0 0 4px #fff, 0 0 5px #ff1177,0 0 8px #ff1177, 0 0 10px #ff1177, 0 0 15px #ff1177, 0 0 30px #ff1177"
+                  : undefined,
+                zIndex: 1,
                 border: grid[i][k] ? "solid 0.1px white" : "solid 0.1px grey",
-               
               }}
             />
           ))
